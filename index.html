@@ -5,45 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCT CATALOG</title>
     <style>
-        h1{text-align: center;
-            border:solid red 3px;
+        
+        h1{
+            text-align: center;
+            border:solid rgb(6, 6, 6) 5px;
             border-radius: 10px;
-            background-color: aquamarine;
+            background-color: #ffffff;
             width: 500px;
             color: blue;
             margin-left: 420px;
+            text-shadow: 1px 1px 2px black;
          }
          .Link{
-           ;
             margin-left: 1200px;
          }
 
-         img{
-            width: 300px;
-            height: 300px;
+         .container{
+             display:flex;
+            flex-direction: row-reverse;
+            background-color: #ffffff;
          }
+         #item1{
+            background-color: #ffffff;
+            margin-right: 40px;
+         }
+         #item2{
+            background-color: #ffffff;
+            justify-content: space-around;
+            margin-right: 20px;
         
+         }
+         .laptop{
+            border: 1px solid black;
+            background-image: url('laptopbg.jpg');
+            padding: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+         }
+         #img1{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #img2{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #img3{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         .mobile{
+            border: 1px solid black;
+            background-image: url(bgmobile.jpeg);
+            padding: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+
+         }
+         #mob1{
+           
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #mob2{
+            background-color: #ffffff;
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #mob3{
+            background-color: #ffffff;
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         .tshirt{
+            border: 1px solid black;
+            background-image: url(bgt-shirt.jpg);
+            padding: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+
+         }
+         #t1{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #t2{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #t3{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         .jeans{
+            border: 1px solid black;
+            background-image: url(bgjeans.jpg);
+            padding: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+
+         }
+         #jen1{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #jen2{
+            height: 300px;
+            width: 250px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         #jen3{
+            height: 300px;
+            width: 300px;
+            margin-right: 150px;
+            filter:drop-shadow(5px 5px 20px black)
+         }
+         .Question{
+             border: 2px dashed black;
+             padding: 50px;
+             padding-top: 20px;
+         }
+        #head2{
+           
+            color: blueviolet;
+        }
+        #head3{
+            
+            color: red;
+        }
     </style>
 </head>
 <body>
     <div>
         <div>
         <h1>PRODUCT CATALOG</h1>
-        <ul class="Link">
-            <li><a href="http://127.0.0.1:5500/electronic.html">Electronics</a></li>
-            <li><a href="http://127.0.0.1:5500/cloths.html">Cloths</a></li>
+            <div class="container">
+                <div class="item" id="item2"><button><a href="http://127.0.0.1:5500/cloths.html"><b>Cloths</b></a></button></div>
+                <div class="item" id="item1"><button><a href="http://127.0.0.1:5500/electronic.html"><b>Electronics</b></a></button></div>
+            </div> 
            
-        </ul>
 
         <!--- Electronic Item-->
 
         <section>
-            <h2 style="color: blueviolet;">Electronoics</h2>
-            <h3 style="color: red;">Laptop</h3>
+            <h2 id="head2">Electronoics</h2>
+            <h3 id="head3">Laptop</h3>
             <p><b>Description :</b>High-performance laptop with the latest processor and ample storage.</p>
             <p><b>Price :</b>$999.99</p>
-            <p><b>Availability :</b>In stock</p>
-            <img src="https://tse4.mm.bing.net/th?id=OIP.GN8vVBj_9dxxd2T768Gy1wHaFj&pid=Api&P=0&h=180" >
+            <p><b>Availability :</b>In stock</p><br><br>
+            <div class="laptop">
+                <marquee scrollamount="20">
+                <img src="laptop image.webp" id="img1">
+                <img src="laptop1.jpeg" id="img2">
+                <img src="laptop3.jpg" id="img3">
+            </marquee>
+            </div>
            <p><a href="https://in.images.search.yahoo.com/images/view;_ylt=AwrKC1l.9Zxmv702H_y9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzFkMzczMjdkYWIzZjI0M2JkMjUyMDZiMTM5MDNmYmVlBGdwb3MDNTAEaXQDYmluZw--?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dlaptop%2Bimage%26type%3DE210IN826G0%26fr%3Dmcafee%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D50&w=612&h=459&imgurl=media.istockphoto.com%2Fphotos%2Flaptop-picture-id465791066%3Fk%3D6%26m%3D465791066%26s%3D612x612%26w%3D0%26h%3DMNy-8ENFcInwqoe6RxWuCZhGcZJ0XsC0Xc_ZX3MtFOA%3D&rurl=http%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Flaptop&size=22.9KB&p=laptop+image&oid=1d37327dab3f243bd25206b13903fbee&fr2=piv-web&fr=mcafee&tt=Laptop+Pictures%2C+Images+and+Stock+Photos+-+iStock&b=0&ni=21&no=50&ts=&tab=organic&sigr=LEjwxv7gR.Tb&sigb=sa2tOvUCUUD0&sigi=sbmiAWwm.iI8&sigt=.HecGMrsE.Pt&.crumb=kfmj1CDpzYP&fr=mcafee&fr2=piv-web&type=E210IN826G0">View Details</a></p>
 
         </section>
@@ -58,11 +199,18 @@
         </section>
         <section>
             <section>
-                <h3 style="color: red;">Smartphone</h3>
+                <h3 id="head3">Smartphone</h3>
                 <p><b>Description :</b>Feature-rich smartphone with a hight-resolution display and advanced camera.</p>
                 <p><b>Price :</b>$699.99</p>
                 <p><b>Availability :</b>Out of stock</p>
-                <img src="https://tse1.mm.bing.net/th?id=OIP.eLpgn4VsDeBfjK10iNKkpgHaF_&pid=Api&P=0&h=180">
+                <div class="mobile">
+                    <marquee scrollamount="20">
+                    <img src="mobile1.jpg" id="mob1">
+                    <img src="mobile2.png" id="mob2">
+                    <img src="mobile4.png" id="mob3">
+                </marquee>
+                </div>
+                
                 <p><a href="https://in.images.search.yahoo.com/images/view;_ylt=AwrKC1kJBJ1mIrI4Txu9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2YzZDM0MmYzNmEzNTdjMDUzOTJjYmMzZTJlNjA3ZTM0BGdwb3MDMzcEaXQDYmluZw--?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dmobile%2Bimage%26type%3DE210IN826G0%26fr%3Dmcafee%26fr2%3Dpiv-web%26tab%3Dorganic%26ri%3D37&w=3772&h=3048&imgurl=www.freepnglogos.com%2Fuploads%2Fsmartphone-png%2Fsmartphone-archos-diamond-smartphones-overview-23.png&rurl=https%3A%2F%2Fwww.freepnglogos.com%2Fpics%2Fsmartphone&size=1904.8KB&p=mobile+image&oid=f3d342f36a357c05392cbc3e2e607e34&fr2=piv-web&fr=mcafee&tt=Smartphone+Transparent+PNG%2C+Smartphone+Clipart+Free+Download+-+Free+...&b=0&ni=21&no=37&ts=&tab=organic&sigr=XzfMh6YqdJ3h&sigb=OpG1gXtqWF6C&sigi=MnETJyGCYQ1X&sigt=ssOxuA7Cb.Dp&.crumb=kfmj1CDpzYP&fr=mcafee&fr2=piv-web&type=E210IN826G0">View Details</a></p>
             </section>
 
@@ -79,12 +227,18 @@
         <!--ClOTHS ITEM -->
 
         <section>
-            <h2 style="color: blueviolet;">Cloths</h2>
-            <h3 style="color: red;">T-Shirt</h3>
+            <h2 id="head2">Cloths</h2>
+            <h3 id="head3">T-Shirt</h3>
             <p><b>Description :</b>Casual and comfortable t-shirt made from premium quality cotton.</p>
             <p><b>Price :</b>$19.99</p>
             <p><b>Availability :</b>In stock</p>
-            <img src="https://tse3.mm.bing.net/th?id=OIP.DPSKSe3UdCsfnip6GXGH2AHaJQ&pid=Api&P=0&h=180" >
+            <div class="tshirt">
+                <marquee scrollamount="20">
+                <img src="tshirt1.jpg" id="t1">
+                <img src="tshirt3.jpeg" id="t2">
+                <img src="tshirt4.png" id="t3">
+            </marquee>
+            </div>
             <p><a href="https://in.images.search.yahoo.com/images/view;_ylt=AwrPqDUV.5xmoo4549C9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzY5ZjI2MDhhMmIxOWZhYTY5ZTdjNWI3OWJiZDU3YzE3BGdwb3MDMjQEaXQDYmluZw--?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dt-shirt%2Bimage%26ei%3DUTF-8%26type%3DE210IN826G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D24&w=2000&h=2500&imgurl=i.pinimg.com%2Foriginals%2Fb9%2F59%2Fcc%2Fb959cce534c8661e181c646c10013922.jpg&rurl=https%3A%2F%2Ffree-best-mockup-design4.blogspot.com%2F2021%2F03%2F8089-royal-blue-t-shirt-template-front.html&size=359.0KB&p=t-shirt+image&oid=69f2608a2b19faa69e7c5b79bbd57c17&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=8089%2B+Royal+Blue+T+Shirt+Template+Front+And+Back+Best+Quality+Mockups+PSD&b=0&ni=160&no=24&ts=&tab=organic&sigr=R3vAsGOPR8AI&sigb=1fu7CPcHtNoH&sigi=QMn6ShsJv0NY&sigt=bxA0b8Wi.UOX&.crumb=kfmj1CDpzYP&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210IN826G0">View Details</a></p>
         </section>
         <section>
@@ -96,12 +250,18 @@
             </ul>
         </section>
         <section>
-            <h3 style="color: red;">Jeans</h3>
+            <h3 id="head3">Jeans</h3>
             <p><b>Description :</b>Classic jeans with a slim fit annd style design.</p>
             <p><b>Price :</b>$49.99</p>
             <p><b>Availability :</b>In stock</p>
-            <img src="https://tse3.mm.bing.net/th?id=OIP.zQROvsUQwW4uf4mGwTixjAHaKk&pid=Api&P=0&h=180">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.2oWsDw8XnT0aJ5qo_QAZ5gAAAA&pid=Api&P=0&h=180">
+            <div class="jeans">
+                <marquee scrollamount="20">
+                <img src="jeans1.png" id="jen1">
+                <img src="jeans2.webp" id="jen2">
+                <img src="jeans3.webp" id="jen3">
+            </marquee>
+            </div>
+
             <p><a href="https://in.images.search.yahoo.com/images/view;_ylt=AwrKC1nG_Zxmjms1fXu9HAx.;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzUzNTMwYjA5ZTk3YzY2ZjI4MGFhYTQ0YThmOWI1OWQ5BGdwb3MDMzUEaXQDYmluZw--?back=https%3A%2F%2Fin.images.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Djeans%2Bimage%26ei%3DUTF-8%26type%3DE210IN826G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D35&w=474&h=429&imgurl=cdn.britannica.com%2F74%2F190774-050-52CE5745%2Fjeans-denim-pants-clothing.jpg&rurl=https%3A%2F%2Fwww.britannica.com%2Fstory%2Fwhy-do-we-say-a-pair-of-pants&size=302.5KB&p=jeans+image&oid=53530b09e97c66f280aaa44a8f9b59d9&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=Why+Do+We+Say+%E2%80%9CA+Pair+of+Pants%E2%80%9D%3F+%7C+Britannica&b=0&ni=160&no=35&ts=&tab=organic&sigr=O6AhcIWESPCO&sigb=rdNBO_84oyLg&sigi=DufhctJHsT1j&sigt=_YB9EKTT_uej&.crumb=kfmj1CDpzYP&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210IN826G0">View Details</a></p>
         </section>
        <section>
@@ -112,7 +272,7 @@
             <li><b>Material :</b>Demin</li>
             
        </section>
-       <section>
+       <div class="Question">
         <h2 style="color: blue;">Frequently Asked Questions :</h2>
         <details>
             <summary>What is your Project Name ?</summary>
@@ -120,14 +280,14 @@
         </details>
         <details>
             <summary>How To bulid This Project ?</summary>
-            <p>Build This Project Using HTML </p>
+            <p>Build This Project Using HTML CSS and JavaScript </p>
         </details>
 
         <details>
             <summary>Who is the Guidance ?</summary>
             <p>Guide By Love Babbar</p>
         </details>
-       </section>
+       </div>
   
 
 
